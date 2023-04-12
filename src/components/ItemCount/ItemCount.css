@@ -1,0 +1,104 @@
+.container-contador {
+    
+    background-color: rgb(54, 54, 54);
+    color: rgb(235, 235, 235);
+    height: 250px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 38px 0px 45px 10px;
+    -webkit-border-radius: 38px 0px 45px 10px;
+    -moz-border-radius: 38px 0px 45px 10px;
+        padding: 100px;
+}
+
+
+.boton {
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: -1px 11px 17px -6px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: -1px 11px 17px -6px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -1px 11px 17px -6px rgba(0, 0, 0, 0.56);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: rgb(175, 175, 175);
+}
+
+.addcart {
+    position: relative;
+    border-color: transparent;
+    background: rgb(96, 96, 96);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    margin: auto auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.addcart span {
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
