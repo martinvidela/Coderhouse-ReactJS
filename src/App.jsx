@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemList greeting={"Bienvenidos!! (•◡•) /"}/>
-      <ItemCount />
     </div>
   );
 }

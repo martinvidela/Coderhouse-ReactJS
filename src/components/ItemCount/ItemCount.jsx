@@ -1,10 +1,10 @@
 import './ItemCount.css'
 import { useState } from 'react'
 
-const ItemCount = () =>{
-    const [valor, setValor] = useState(0);
+const ItemCount = ({initial, stock, onAdd}) =>{
+    const [valor, setValor] = useState(initial);
 
-    const sumar= () =>{
+    const increase= () =>{
 
         setValor(valor+1)
     }
@@ -14,7 +14,7 @@ const ItemCount = () =>{
         setValor(0)
     }
 
-    const disminuir= () =>{
+    const decrease= () =>{
 
         setValor(valor-1)
     }
@@ -24,11 +24,13 @@ const ItemCount = () =>{
             <h1>Contador</h1>
             <h2>{valor}</h2>
             <div className='botones'>
-            <button className='boton' onClick={sumar}>Aumentar</button>
+            <button className='boton'disabled={valor >=stock} onClick={increase}>Aumentar</button>
             <button className='boton' onClick={res}>Restablecer</button>
-            <button className='boton' onClick={disminuir}>Disminuir</button>
+            <button className='boton'disabled={valor <=1} onClick={decrease}>Disminuir</button>
             </div>
-            <button className='addcart'>
+            <button 
+            onClick={()=>onAdd(valor)}
+            className='addcart'>
             <span></span>
             <span></span>
             <span></span>
