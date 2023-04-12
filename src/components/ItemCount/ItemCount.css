@@ -53,6 +53,10 @@
     padding: 20px;
 }
 
+span{
+    background-color: #943164;
+}
+
 .addcart span {
     position: absolute;
     background-color: #fff;
@@ -64,6 +68,7 @@ button span:nth-child(1) {
     height: 1px;
     top: 0;
     left: -100%;
+    
 }
 
 button span:nth-child(2) {

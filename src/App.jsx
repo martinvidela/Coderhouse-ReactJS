@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemList greeting={"Bienvenidos!! (•◡•) /"}/>
+      <ItemList greeting={"BIENVENIDOS (•◡•) /"}/>
     </div>
   );
 }
