@@ -32,13 +32,13 @@
     transition: 0.2s;
 
 }
-.nav-link:hover{
+.nav-link:hover,
+.nav-link.active{
     color: black;
+    
 }
 
-.nav-link:active{
-    color: black;
-}
+
 
 .logo {
     width: 60px;

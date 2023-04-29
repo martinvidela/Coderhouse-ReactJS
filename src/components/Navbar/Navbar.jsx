@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
-import cart from '../Navbar/cart.svg'
 import logo from '../Navbar/logo.png'
+import { CartWidget } from '../CartWidget/CartWidget'
 
 
 
@@ -27,7 +27,7 @@ export const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-    <img src={cart} alt="cart" />
+    <CartWidget/>
     </nav >
   )
 }
