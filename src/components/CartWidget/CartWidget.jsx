@@ -4,6 +4,9 @@ import cart from '../CartWidget/cart.svg'
 
 export const CartWidget = () => {
   return (
-    <img src={cart} alt="cart" />
+    <div style={{display:'flex'}}>
+      <img src={cart} alt="cart" />
+      <p>0</p>
+    </div>
   )
 }
