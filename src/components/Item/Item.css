@@ -1,0 +1,39 @@
+.CardItem {
+    text-align: center;
+    background-color: pink;
+    border: solid 1px transparent;
+    border-radius: 30px;
+    height: 400px;
+    padding: 15px;
+}
+
+.ItemHeader{
+}
+
+.Header{
+    padding: 10px;
+}
+
+.ItemImg {
+    width: 170px;
+}
+
+.ListGroup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Info{
+margin: 10px;
+}
+
+.Option{
+    background-color: rgb(245, 138, 245);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: rgb(245, 138, 245);
+    border-radius: 10px; 
+}
