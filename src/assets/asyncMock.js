@@ -41,6 +41,15 @@ const products = [
 ];
 
 
+export const getProductsByCategory = (category) =>{
+  return new Promise((resolve)=>{
+    setTimeout(()=>{
+      resolve(products.filter(prod=>prod.category === category))
+    }, 500
+    );
+  })
+}
+
 export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
