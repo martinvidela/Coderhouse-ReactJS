@@ -18,12 +18,12 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to='/category/:id' className='nav-link'>
+            <NavLink to='/category/gaming' className='nav-link'>
               Gaming
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to='/item/:id' className='nav-link'>
+            <NavLink to='/category/oficina' className='nav-link'>
               Oficina
             </NavLink>
           </li>
