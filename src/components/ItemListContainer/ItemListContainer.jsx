@@ -40,7 +40,7 @@ export const ItemListContainer = () => {
         <div >
 
             <ItemList products={products} />
-            <ItemCount />
+            <ItemCount initial={0} />
         </div>
     )
 }

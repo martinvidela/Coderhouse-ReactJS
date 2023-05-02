@@ -3,7 +3,7 @@
     background-color: pink;
     border: solid 1px rgb(193, 193, 193);
     border-radius: 30px;
-    height: 400px;
+    height: 450px;
     padding: 15px;
     margin: 15px;
 }
@@ -24,16 +24,17 @@
 }
 
 .Info{
-margin: 10px;
+margin: 25px;
 }
 
 .Option{
     background-color: rgb(245, 138, 245);
-    padding: 10px;
+    padding: 12px;
     font-size: 15px;
     text-align: center;
     color: white;
     font-weight: bold;
     border: rgb(245, 138, 245);
     border-radius: 10px; 
+    text-decoration: none;
 }
