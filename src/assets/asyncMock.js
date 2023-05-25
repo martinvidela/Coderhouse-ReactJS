@@ -4,7 +4,7 @@ const products = [
     nombre: "Consola Xbox Series X",
     precio: 499.99,
     descripcion: "La consola de última generación de Microsoft, con capacidad para juegos en 4K y HDR",
-    imagen: "https://images.start.com.ar/RRT-00002GPUL1M.jpg",
+    imagen: "https://www.atajo.com.ar/images/0RRT-00002GPUL1M15117RRT-00002GPUL1M.jpg",
     stock: 25,
     category: 'Gaming'
   },

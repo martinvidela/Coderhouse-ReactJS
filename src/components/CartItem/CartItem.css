@@ -1,0 +1,10 @@
+.contenedorcart{
+display: flex;
+justify-content: space-around;
+background-color: pink;
+align-items: center;
+height: 120px;
+margin: 30px;
+border: 2px solid rgb(224, 224, 224);
+border-radius: 20px;
+}

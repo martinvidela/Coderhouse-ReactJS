@@ -1,14 +1,15 @@
+import './CartItem.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 
-const CartItem = ({nombre, precio, quantity, id}) => {
+export const CartItem = ({nombre, precio, quantity, id}) => {
 
   const {removeItem} = useContext (CartContext)
 
 
   return (
     <div className=''>
-      <section className=''>
+      <section className='contenedorcart'>
         <h4>{nombre}</h4>
         <div>Precio: ${precio}</div>
         <div>Cantidad: {quantity}</div>        
@@ -18,5 +19,3 @@ const CartItem = ({nombre, precio, quantity, id}) => {
     </div>
   )
 }
-
-export default CartItem
