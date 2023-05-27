@@ -1,0 +1,26 @@
+.container-total{
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Button{
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.checkout{
+    margin-top: 12px;
+    background-color: pink;
+    width: 200px;
+    margin: 20px auto;
+    border: solid 2px purple;
+    border-radius: 15px ;
+    padding: 10px;
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}

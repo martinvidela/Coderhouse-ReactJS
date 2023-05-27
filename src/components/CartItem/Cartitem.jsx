@@ -8,12 +8,12 @@ export const CartItem = ({nombre, precio, quantity, id}) => {
 
 
   return (
-    <div className=''>
+    <div >
       <section className='contenedorcart'>
         <h4>{nombre}</h4>
         <div>Precio: ${precio}</div>
         <div>Cantidad: {quantity}</div>        
-        <div>Subtotal: ${precio*quantity}</div>    
+        <div>Subtotal: ${(parseInt(precio*quantity))}</div>    
         <button onClick={()=> removeItem(id)} className='boton'>X</button>
       </section>
     </div>
