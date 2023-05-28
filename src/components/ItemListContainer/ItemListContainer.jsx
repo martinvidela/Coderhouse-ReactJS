@@ -1,62 +1,42 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { collection, query, where, getDocs } from 'firebase/firestore';
-import { db } from '../../services/firebase/firebaseConfig';
+import { useEffect, useState } from "react"
+import ItemList from "../ItemList/ItemList"
+import '../Item/Item.css'
+import { useParams } from "react-router-dom"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../services/firebase/firebaseConfig"
+import { Spinner } from "reactstrap"
 
 export const ItemListContainer = () => {
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const { categoryId } = useParams();
-
-    const callProductByCategory = (category) => {
-        console.log('Ingresó a la función');
-        const collectionRef = query(collection(db, 'products'), where('category', '==', category));
-        return getDocs(collectionRef)
-            .then((querySnapshot) => {
-                const productsData = querySnapshot.docs.map((doc) => ({
-                    id: doc.id,
-                    ...doc.data(),
-                }));
-                return productsData;
-            })
-            .catch((error) => {
-                console.log('Error fetching products:', error);
-                throw error;
-            });
-    };
+    const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        const asyncFunc = categoryId ? callProductByCategory : getProducts;
-        if (!categoryId) {
-            asyncFunc(categoryId)
-                .then((response) => {
-                    setProducts(response);
-                })
-                .catch((error) => {
-                    console.log('Error fetching products:', error);
-                });
-        }
-    }, [categoryId]);
+        setLoading(true)
 
-    const getProducts = async () => {
-        try {
-            const collectionRef = collection(db, 'products');
-            const querySnapshot = await getDocs(collectionRef);
-            const productsData = querySnapshot.docs.map((doc) => ({
-                id: doc.id,
-                ...doc.data(),
-            }));
-            return productsData;
-        } catch (error) {
-            console.log('Error fetching products:', error);
-            throw error;
-        }
-    };
+        const collectionRef = categoryId ? query(collection(db, 'products'), where('category', '==', categoryId)): collection(db, 'products')
+
+        getDocs(collectionRef)
+            .then((response) => {
+                const productsAdapted = response.docs.map(doc=>{
+                    const data = doc.data()
+                    return { id: doc.id, ...data }
+                })
+                setProducts(productsAdapted)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [categoryId])
+
 
     return (
         <div>
-                    <ItemList products={products} />
-
+            <ItemList products={products} />
         </div>
-    );
-};
+    )
+}
+
