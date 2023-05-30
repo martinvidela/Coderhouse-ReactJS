@@ -3,6 +3,8 @@ import './Cart.css'
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import { CartItem } from '../CartItem/Cartitem';
+import { Checkout } from '../Checkout/Checkout';
+
 
 export const Cart = () => {
     const { cart, clearCart, totalQuantity, total } = useContext(CartContext);
@@ -22,7 +24,7 @@ export const Cart = () => {
             <div className='container-total'>
                 <h3>Total: ${parseInt(total())}</h3>
                 <button onClick={() => clearCart()} className='Button'>Limpiar carrito</button>
-                <Link to='/checkout' className='checkout'>CHECKOUT</Link>
+                <Link to='/Checkout' className='checkout'>CHECKOUT</Link>
             </div>
         </div>
     );
