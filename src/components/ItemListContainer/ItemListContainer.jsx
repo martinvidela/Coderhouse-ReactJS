@@ -4,7 +4,7 @@ import '../Item/Item.css'
 import { useParams } from "react-router-dom"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
-import { Spinner } from "reactstrap"
+import { Spinner } from "react-bootstrap"
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -31,6 +31,14 @@ export const ItemListContainer = () => {
                 setLoading(false)
             })
     }, [categoryId])
+
+    if(loading){
+        return(
+            <div className="spinner">
+        <Spinner color='dark' className="text-center"/>
+        </div>
+        )
+    }
 
 
     return (

@@ -6,11 +6,13 @@
     height: 450px;
     padding: 15px;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
-.Header{
+.Header {
     padding: 10px;
 }
 
@@ -23,11 +25,11 @@
     justify-content: space-around;
 }
 
-.Info{
-margin: 25px;
+.Info {
+    margin: 25px;
 }
 
-.Option{
+.Option {
     background-color: rgb(245, 138, 245);
     padding: 12px;
     font-size: 15px;
@@ -35,7 +37,7 @@ margin: 25px;
     color: white;
     font-weight: bold;
     border: rgb(245, 138, 245);
-    border-radius: 10px; 
+    border-radius: 10px;
     text-decoration: none;
 }
 
@@ -53,3 +55,14 @@ margin: 25px;
     transform: translate(-50%, -50%);
 
 }
+
+.linkto {
+    text-decoration: none;
+}
+.spinner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+

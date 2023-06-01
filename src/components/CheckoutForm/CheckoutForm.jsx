@@ -29,7 +29,7 @@ export const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Apellido
                 </label>
-                <input type="text" value={lastname} onChange={({ target }) => setLastname(target.value)} />
+                <input type="text" value={lastname} onChange={({ target }) => setLastname (target.value)} />
                 <label className='Label'>
                     Telefono
                     <input

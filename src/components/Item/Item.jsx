@@ -24,7 +24,6 @@ return (
         <Link to={`/item/${id}`} className='Option'> Ver detalles </Link>
         </footer>
     </article>
-
 )
     
 }
