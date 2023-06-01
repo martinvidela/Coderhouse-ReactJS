@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './CheckoutForm.css'
 
 
 export const CheckoutForm = ({ onConfirm }) => {
@@ -20,35 +20,34 @@ export const CheckoutForm = ({ onConfirm }) => {
 
 
     return (
-        <div className='Container'>
+        <div className='Form'>
             <form onSubmit={handleConfirm} className='Form'>
-                <label className='Label'>
-                    Nombre
-                </label>
-                <input type="text" value={name} onChange={({ target }) => setName(target.value)} />
-                <label className='Label'>
-                    Apellido
-                </label>
-                <input type="text" value={lastname} onChange={({ target }) => setLastname (target.value)} />
-                <label className='Label'>
-                    Telefono
+                <div className='form__group'>
+                    <label className='Label'>
+                        Nombre
+                    </label>
+                    <input type="text" className='form__input' value={name} onChange={({ target }) => setName(target.value)} />
+                </div>
+                <div className='form__group'>
+                    <label className='Label' placeholder='Apellido'>
+                        Apellido
+                    </label>
+                    <input type="text" className='form__input' value={lastname} onChange={({ target }) => setLastname(target.value)} />
+                </div>
+                <div className='form__group'>
+                    <label className='Label'>
+                        Telefono
+                    </label>
                     <input
-                        className='Input'
-                        type='text'
-                        value={phone}
-                        onChange={({ target }) => setPhone(target.value)}
-                    />
-                </label>
+                        className='form__input' type='text' value={phone} onChange={({ target }) => setPhone(target.value)} />
+                </div>
+                <div className='form__group'>
                 <label className='Label'>
                     Email
-                    <input
-                        className='Input'
-                        type="email"
-                        value={email}
-                        onChange={({ target }) => setEmail(target.value)}
-                    />
                 </label>
-                <div className='Label'>
+                <input className='form__input' type="email" value={email} onChange={({ target }) => setEmail(target.value)}  />
+                </div>
+                <div className='form__group'>
                     <button type='sumbit' className='ButtonSumbit'>Crear Orden</button>
                 </div>
             </form>

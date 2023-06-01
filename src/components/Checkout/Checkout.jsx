@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { db } from '../../services/firebase/firebaseConfig'
 import { addDoc, collection, getDocs, query, where, writeBatch } from 'firebase/firestore'
-
-
 import { CheckoutForm } from '../CheckoutForm/CheckoutForm'
 import { CartContext } from '../../context/CartContext'
 
@@ -80,7 +78,6 @@ export const Checkout = () => {
 
     return (
         <div>
-            <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder} />
         </div>
     );

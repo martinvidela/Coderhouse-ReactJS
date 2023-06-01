@@ -8,33 +8,40 @@
     place-content: center;
     width: 30%;
     margin: 0 auto;
-   
-    border-radius:  45px ;
-   
-   
+
+    border-radius: 45px;
+
+
 }
-.botones{
+
+.botones {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .boton {
-
     background-color: rgb(245, 138, 245);
-    padding: 12px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color: white;
     font-weight: bold;
-    border: rgb(245, 138, 245);
-    border-radius: 10px; 
+    border: solid transparent 10px;
+    border-radius: 0.5rem;
     text-decoration: none;
+    margin: 0 18px;
+    height: 2rem;
     cursor: pointer;
+    transition: 0.5s;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .boton:hover {
-    background: rgb(175, 175, 175);
+    background: rgb(99, 33, 255);
 }
 
 .addcart {
@@ -45,11 +52,19 @@
     color: white;
     font-weight: bold;
     border: rgb(245, 138, 245);
-    border-radius: 10px; 
+    border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.5s;
 
 }
+
+.addcart:hover {
+    background-color: white;
+    color: rgb(245, 138, 245);
+    border: solid 2px rgb(245, 138, 245);
+}
+
 
 span {
     background-color: #943164;
