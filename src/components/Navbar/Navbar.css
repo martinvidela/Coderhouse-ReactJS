@@ -1,8 +1,8 @@
 
 .navbar {
-    background-color: pink;
+    background-color: rgb(194, 40, 71);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     align-items: center;
 }
@@ -10,11 +10,10 @@
 .navbar-list {
     display: flex;
     list-style-type: none;
-
+    margin-right: 50px;
 }
 
 .nav-item{
-    display: inline-block;
     margin: 0 25px;
     transition: 0.2s;
     
@@ -27,20 +26,24 @@
 
 .nav-link {
     text-decoration: none;
-    font-size: 18px;    
+    font-size: 20px;    
     color: white;
     transition: 0.2s;
 
 }
-.nav-link:hover,
+
 .nav-link.active{
     color: black;
     
 }
-
-
-
 .logo {
     width: 60px;
+    margin-left: 50px;
 }
 
+.CartWidget{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.2s;
+}

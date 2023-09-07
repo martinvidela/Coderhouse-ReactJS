@@ -1,0 +1,28 @@
+.card-detail{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    height: 400px;
+    align-items: center;
+}
+
+.info-detail{
+    margin: 25px;
+    font-size: 20px;
+}
+
+.imagen-detail{
+    width: 300px;
+  margin-top: 20px;
+}
+
+.Option{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}

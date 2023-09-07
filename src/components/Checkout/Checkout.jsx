@@ -70,10 +70,10 @@ export const Checkout = () => {
     };
 
     if (loading) {
-        return <h1>Se está generando su orden</h1>;
+        return <h1 className="checking">Generating your order</h1>;
     }
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>;
+        return <h1 className="checking">Your order id is: {orderId} thanks!</h1>;
     }
 
     return (

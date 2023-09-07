@@ -1,49 +1,69 @@
 .container-total {
-    margin: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Button {
-    width: 200px;
-    margin: 0 auto;
-
-}
-
-.checkout {
-    margin-top: 12px;
-    background-color: pink;
-    width: 200px;
-    margin: 20px auto;
-    border: solid 2px purple;
-    border-radius: 15px;
-    padding: 10px;
-    color: purple;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .totalquantity {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .Productos {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    background-color: pink;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition: 0.5s;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: crimson;
+  text-decoration: underline;
+  padding: 5px;
+  transition: 0.5s;
 }
 
-.Productos:hover{
-    color: black;
-    
+
+.button {
+  margin-top: 10px;
+  color: #222;
+  font-weight: bold;
+  width: 12em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #be3e3e 0%, #c21b1b 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 12em;
+}
+.button:hover {
+  color: white;
 }

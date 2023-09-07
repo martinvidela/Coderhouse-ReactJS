@@ -6,7 +6,6 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
 import '../Item/Item.css'
 
-import { Spinner } from 'react-bootstrap';
 export const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState(null)
@@ -38,7 +37,6 @@ export const ItemDetailContainer = () => {
   if (loading) {
     return (
       <div className='spinner'>
-      <Spinner color='dark' />
       </div>
     )
   }
