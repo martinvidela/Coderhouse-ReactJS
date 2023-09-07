@@ -1,4 +1,4 @@
-# PROYECTO Ecommerce de ReactJS
+# Monstercat-IT ecommerce
 
 ##Caracteristicas:
 * Montado con ReactJs
