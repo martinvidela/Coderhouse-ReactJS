@@ -1,16 +1,25 @@
-# Monstercat-IT ecommerce
+# Roma-IT Ecommerce
 
-##Caracteristicas:
-* Montado con ReactJs
-* Coleccion en Firestore
-* Lista de productos
-* Detalles de los productos
-* Carrito
+##Includes:
+* Written with ReactJs
+* Firestore
+* List of products
+* Products details
+* Cart
 * Checkout
-* Uso de BrowserRouter
+* BrowserRouter
 * React Context
+* Custom Hooks
 
 
-## Este proyecto fue realizado con Vite
+```bash
+git clone
+npm install
+npm run dev
+# or
+yarn install
+yarn dev
+```
+
 
 
